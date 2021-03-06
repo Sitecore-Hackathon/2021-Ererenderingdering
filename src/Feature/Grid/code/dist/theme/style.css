@@ -5,3 +5,8 @@
 tbody td button:first-of-type {
     margin-right: 10px;
 }
+
+th.gridjs-th:first-child,
+td.gridjs-td:first-child {
+    display: none;
+}
