@@ -31,7 +31,7 @@ function cancelEdit(element) {
     var row = $(element).closest("tr");
     var tableCells = row.find("td:not(:last)");
 
-    tableCells.slice(2).each(function () {
+    tableCells.slice(2).each(function () { 
         $(this).html($(this).data('value'));
         $(this).removeData('value');
     });

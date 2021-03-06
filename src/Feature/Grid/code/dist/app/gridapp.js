@@ -31,7 +31,7 @@ function cancelEdit(element) {
     var row = $(element).closest("tr");
     var tableCells = row.find("td:not(:last)");
 
-    tableCells.slice(2).each(function () {
+    tableCells.slice(2).each(function () { 
         $(this).html($(this).data('value'));
         $(this).removeData('value');
     });
@@ -40,31 +40,28 @@ function cancelEdit(element) {
 }
 
 function deleteRow(element) {
-    console.log(element);
     var row = $("button.btn-delete").closest("tr");
     var id = $("button.btn-delete").closest("tr").children()[0].innerText;
 
     postData('/grid/gridapplication/delete?id=' + id + '&database=' + database)
-        .then(data => {
-            console.log(data); // JSON data parsed by `data.json()` call
+        .then(function (data) { 
+            row.remove();
         });
 }
 
 async function postData(url = '', data = {}) {
-    // Default options are marked with *
     const response = await fetch(url, {
-        method: 'POST', // *GET, POST, PUT, DELETE, etc.
-        mode: 'cors', // no-cors, *cors, same-origin
-        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: 'include', // include, *same-origin, omit
+        method: 'POST', 
+        mode: 'cors', 
+        cache: 'no-cache', 
+        credentials: 'include', 
         headers: {
             'Content-Type': 'application/json'
-            // 'Content-Type': 'application/x-www-form-urlencoded',
         },
-        redirect: 'follow', // manual, *follow, error
-        referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify(data) // body data type must match "Content-Type" header
+        redirect: 'follow', 
+        referrerPolicy: 'no-referrer', 
+        body: JSON.stringify(data) 
     });
-    return response.json(); // parses JSON response into native JavaScript objects
+    return response; 
 }
 

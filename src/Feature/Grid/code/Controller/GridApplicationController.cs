@@ -24,7 +24,7 @@ namespace Feature.Grid.Controllers
             {
                 var item = Sitecore.Context.Data.Database.GetItem(new ID(id));
                 var children = item.Children;
-                var templates = children.Select(x => x.Template).Distinct();
+                var templates = children.Select(x => x.Template).Take(1).Distinct();
                 var fields = new List<string>();
 
                 foreach (var templateItem in templates)
@@ -135,7 +135,7 @@ namespace Feature.Grid.Controllers
                 return Content(e.Message + e.Source);
             }
 
-            return Content("success");
+            return Content("{\"result\":\"success\"}");
         }
     }
 }
