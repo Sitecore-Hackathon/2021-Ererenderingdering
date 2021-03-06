@@ -17,7 +17,7 @@ var cancelButton = "<button class='btn-cancel' onClick='cancelEdit(this)'>Cancel
 function saveRow(element) {
     var row = $(element).closest("tr");
     var tableCells = row.find("td:not(:last)");
-    var fieldValues = [];
+    var fieldValues = new Array;
 
     tableCells.each(function () {
         if ($(this).find("input").val()) {
@@ -27,9 +27,9 @@ function saveRow(element) {
             fieldValues.push($(this).html());
         }
     })
+    var concattedArray = fieldValues.associate(['ID', 'Name'].concat(fields.split(',')));
 
-    //key value array: fieldValues.associate(['ID', 'Name'].concat(fields.split(',')))
-    console.log(fieldValues.associate(['ID', 'Name'].concat(fields.split(','))));
+    postData('/grid/gridapplication/save?id=' + concattedArray.ID + '&database=' + database, concattedArray);
 }
 
 function editRow(element) {
