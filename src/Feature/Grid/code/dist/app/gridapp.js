@@ -31,7 +31,8 @@ function saveRow(element) {
         }
     })
     var concattedArray = fieldValues.associate(['ID', 'Name'].concat(fields.split(',')));
-    postData('/grid/gridapplication/save?id=' + concattedArray.ID + '&database=' + database, { "fields": concattedArray });
+
+    postData('/grid/gridapplication/save?id=' + concattedArray.ID + '&database=' + database, concattedArray);
 
     tableCells.slice(2).each(function () {
         $(this).html($(this).find('input').val());
