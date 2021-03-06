@@ -81,7 +81,7 @@
     <Content Include="dist\app\gridapp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="dist\lib\gridjs.production.min.js">
+    <Content Include="dist\lib\gridjs.development.min.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="dist\lib\jquery.min.js">

@@ -1,9 +1,9 @@
 ﻿$(document).ready(function () {
-    $("div.gridapp").Grid({
-        columns: ['Name', 'Age', 'Email'],
+    new gridjs.Grid({
+        columns: ['Name', 'Age', 'Email', 'Actions'],
         server: {
-            url: '/grid/gridapplication/data?id=' + itemId + '&database='+ database,
-            then: data => data.Data.map(item => [item[0], item[1], item[2], item[3], item[4], item[5]])
+            url: '/grid/gridapplication/data?id=' + itemId + '&database=' + database,
+            then: data => data.Data.map(item => [item[0], item[1], item[2], gridjs.html(`<a>Link to</a>`)])
         }
-    });
+    }).render(document.getElementById("gridapp"));
 });
