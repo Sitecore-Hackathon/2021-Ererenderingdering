@@ -42,8 +42,11 @@ We introduce intgration of Data Grid to Sitecore Content Editor that will allow 
 
 ## Usage instructions
 
-You can view children items in convenient way.
+You can view children items in convenient way:
 ![Visualization](https://user-images.githubusercontent.com/647813/110221990-f0ec0480-7ed7-11eb-969b-a11fba95a34c.gif)
+
+You can easily find childrent items using search and sorting:
+![SearchAndSorting](https://user-images.githubusercontent.com/647813/110222091-740d5a80-7ed8-11eb-8cd3-39eb4597da2f.gif)
 
 
 
