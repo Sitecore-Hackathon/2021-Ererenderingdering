@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Data.Templates;
+using Sitecore.SecurityModel;
 
 namespace Feature.Grid.Controllers
 {
@@ -115,18 +116,23 @@ namespace Feature.Grid.Controllers
             return Content(JsonConvert.SerializeObject(model));
         }
 
+        [HttpPost]
         public ActionResult Delete(string id, string database)
         {
             try
             {
                 using (new DatabaseSwitcher(Sitecore.Data.Database.GetDatabase(database)))
                 {
-                    Sitecore.Context.Database.GetItem(new ID(id)).Delete();
+                    //ToDo figure out with security rights
+                    using (new SecurityDisabler())
+                    {
+                        Sitecore.Context.Database.GetItem(new ID(id)).Delete();
+                    }
                 }
             }
-            catch
+            catch (Exception e)
             {
-                return Content("fail");
+                return Content(e.Message + e.Source);
             }
 
             return Content("success");

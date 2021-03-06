@@ -13,7 +13,7 @@ function deleteRow(element) {
     var row = $("button").closest("tr");
     var id = $("button").closest("tr").children()[0].innerText;
 
-    postData('/grid/gridapplication/data?id=' + id)
+    postData('/grid/gridapplication/delete?id=' + id + '&database=' + database)
         .then(data => {
             console.log(data); // JSON data parsed by `data.json()` call
         });
@@ -25,7 +25,7 @@ async function postData(url = '', data = {}) {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         mode: 'cors', // no-cors, *cors, same-origin
         cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: 'same-origin', // include, *same-origin, omit
+        credentials: 'include', // include, *same-origin, omit
         headers: {
             'Content-Type': 'application/json'
             // 'Content-Type': 'application/x-www-form-urlencoded',
