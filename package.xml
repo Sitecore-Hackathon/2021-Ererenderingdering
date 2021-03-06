@@ -1,0 +1,141 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName />
+      <Author />
+      <Version />
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Editors/Items/Grid/{BD3BE6B0-CD58-4E4B-B4BB-853AD87D71DA}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Module</Name>
+    </xitems>
+    <items>
+      <Database>master</Database>
+      <Root>{2EAB9094-4906-478F-8254-0EA7C64ED298}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Data</Name>
+    </items>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/templates/Hackaton Data/{9CF3C6F6-A468-427E-81E6-BF49F8E6AAC9}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/{E63391F3-CEF2-449D-8AC6-FAF976643BCC}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Dimensions/{E7006A6C-54F2-4FCE-B2AF-78306F833AE4}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Dimensions/Height/{40918B98-9236-40D0-870E-3C9627192D34}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Dimensions/Length/{34D539DC-7E16-4571-9185-D8BD47823B07}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Dimensions/Number of Doors/{0E4B4EEE-68A6-433B-B357-950CB92DD157}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Dimensions/Wheelbase/{9E4B2E62-1A4E-4B90-A528-2B17BC2AD4F1}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Dimensions/Width/{9F3A6200-451A-4FA5-BA1B-A65A1BFAEFD8}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Engine/{D8144915-BD4D-45BF-9B83-0CA012F73A41}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Engine/Engine Alignment/{9F378BDC-9943-4106-9AD9-E29930921112}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Engine/Engine Code/{BCCC5BB9-A2AB-46B4-ABF7-71655FAA3196}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Engine/Engine Type/{8C0CE927-764D-44FB-A9B0-522E040042D0}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Engine/Fuel System/{2870A10E-50D0-433F-B1F6-304FE0940389}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Engine/Fuel Type/{E9841B85-7EAF-4FEA-A7A3-50B3474971F7}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Performance/{F7D24146-610D-4182-8537-26CD24F2B173}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Performance/Acceleration 0 to 100 kmh/{DF6F15BD-0ADD-431B-BB2B-4BBB9071F00D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Performance/Fuels Consumption/{7FF28CA6-0F27-4953-B895-E422E20E388B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Performance/Top Speed/{142B6602-6022-4920-87F5-78F6E57671CF}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Cars Folder/__Standard Values/{C7B086DE-04F0-4D90-A88E-CC764D29C343}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Cars Folder/{F6576E41-AC77-4F93-B236-1CE175D23BEA}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Demo Templates</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
