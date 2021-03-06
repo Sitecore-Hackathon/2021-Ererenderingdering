@@ -1,0 +1,7 @@
+﻿td .td-input {
+    width: 100%;
+}
+
+tbody td button:first-of-type {
+    margin-right: 10px;
+}

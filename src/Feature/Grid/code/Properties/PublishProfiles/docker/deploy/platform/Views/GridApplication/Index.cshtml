@@ -1,7 +1,7 @@
 ﻿@model Feature.Grid.Models.Page
 <script type="text/javascript">
     var itemId = "@Model.Id";
-    var templates = "@Model.TemplatesJson";
+    var templates = @Html.Raw(Model.TemplatesJson);
     var fields = "@Model.FieldsJson";
     var database = "@Model.Database";
 </script>

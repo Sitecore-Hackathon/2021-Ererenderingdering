@@ -14,7 +14,7 @@ namespace Feature.Grid.Controllers
 {
     public class GridApplicationController : Controller
     {
-        private List<string> _includedFields = new List<string>() { "__Icon" };
+        private List<string> _includedFields = new List<string>() {  };
         private List<string> _defaultFields = new List<string>() { "__Icon" };
         // GET: Application
         public ActionResult Index(string id, string database)
@@ -22,18 +22,18 @@ namespace Feature.Grid.Controllers
             var model = new Page();
             using (new DatabaseSwitcher(Sitecore.Data.Database.GetDatabase(database)))
             {
-                /*var item = Sitecore.Context.Data.Database.GetItem(new ID(id));
-                var templates = item.Children.Select(x => x.Template).Distinct();
+                var item = Sitecore.Context.Data.Database.GetItem(new ID(id));
+                var children = item.Children;
+                var templates = children.Select(x => x.Template).Distinct();
                 var fields = new List<string>();
 
-                foreach (var template in templates)
+                foreach (var templateItem in templates)
                 {
-                    fields.AddRange(template.OwnFields.Select(x=>x.Name));
+                    fields.AddRange(templateItem.OwnFields.Select(x=>x.Name));
                 }
 
-                model.FieldsJson = JsonConvert.SerializeObject(fields);
-                model.TemplatesJson = JsonConvert.SerializeObject(templates);
-                */
+                model.FieldsJson = string.Join(",", fields);
+                model.TemplatesJson = JsonConvert.SerializeObject(templates.Select(x=>x.ID));
             }
 
             model.Id = id;

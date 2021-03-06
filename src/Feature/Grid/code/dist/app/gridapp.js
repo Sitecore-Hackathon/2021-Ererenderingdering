@@ -1,9 +1,9 @@
 ﻿$(document).ready(function () {
     new gridjs.Grid({
-        columns: ['ID', 'Name', 'Email', 'Actions'],
+        columns: ['ID', 'Name'].concat(fields.split(',')).concat(['Actions']),
         server: {
-            url: '/grid/gridapplication/data?id=' + itemId + '&database=' + database,
-            then: data => data.Data.map(item => [item[0], item[1], item[2], gridjs.html(editButton + deleteButton)])
+            url: '/grid/gridapplication/data?id=' + itemId + '&database=' + database + '&fields=' + fields,
+            then: data => data.Data.map(item => [...item, gridjs.html(editButton + deleteButton)])
         }
     }).render(document.getElementById("gridapp"));
 });
