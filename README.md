@@ -18,9 +18,7 @@ Sitecore is storage of data. I even know companies, who use Sitecore only as "ad
 We introduce intgration of Data Grid to Sitecore Content Editor that will allow Content Managers to edit bulk data more quickly and efficiently.
 
 ## Video link
-⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
-
-⟹ [Replace this Video link](#video-link)
+[Short Video](https://www.youtube.com/watch?v=NjKQJDqYUu4&ab_channel=antontishchenko)
 
 
 
