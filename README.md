@@ -25,7 +25,7 @@ We introduce intgration of Data Grid to Sitecore Content Editor that will allow 
 
 
 ## Installation instructions
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
+1. Use the Sitecore Installation wizard to install the [package](package.zip)
 
 ### Configuration
 
