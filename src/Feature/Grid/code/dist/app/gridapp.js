@@ -29,6 +29,13 @@ function saveRow(element) {
     })
     var concattedArray = fieldValues.associate(['ID', 'Name'].concat(fields.split(',')));
     postData('/grid/gridapplication/save?id=' + concattedArray.ID + '&database=' + database, { "fields": concattedArray });
+
+    tableCells.slice(2).each(function () {
+        $(this).html($(this).find('input').val());
+    });
+
+    $(element).replaceWith(editButton);
+    row.find('.btn-cancel').replaceWith(deleteButton);
 }
 
 function editRow(element) {
