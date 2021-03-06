@@ -109,6 +109,42 @@
         <x-item>/master/sitecore/templates/Hackaton Data/Car/Performance/Top Speed/{142B6602-6022-4920-87F5-78F6E57671CF}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/Hackaton Data/Cars Folder/__Standard Values/{C7B086DE-04F0-4D90-A88E-CC764D29C343}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/Hackaton Data/Cars Folder/{F6576E41-AC77-4F93-B236-1CE175D23BEA}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/{9CF3C6F6-A468-427E-81E6-BF49F8E6AAC9}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/{E63391F3-CEF2-449D-8AC6-FAF976643BCC}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Dimensions/{E7006A6C-54F2-4FCE-B2AF-78306F833AE4}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Dimensions/Height/{40918B98-9236-40D0-870E-3C9627192D34}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Dimensions/Length/{34D539DC-7E16-4571-9185-D8BD47823B07}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Dimensions/Number of Doors/{0E4B4EEE-68A6-433B-B357-950CB92DD157}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Dimensions/Wheelbase/{9E4B2E62-1A4E-4B90-A528-2B17BC2AD4F1}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Dimensions/Width/{9F3A6200-451A-4FA5-BA1B-A65A1BFAEFD8}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Engine/{D8144915-BD4D-45BF-9B83-0CA012F73A41}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Engine/Engine Alignment/{9F378BDC-9943-4106-9AD9-E29930921112}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Engine/Engine Code/{BCCC5BB9-A2AB-46B4-ABF7-71655FAA3196}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Engine/Engine Type/{8C0CE927-764D-44FB-A9B0-522E040042D0}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Engine/Fuel System/{2870A10E-50D0-433F-B1F6-304FE0940389}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Engine/Fuel Type/{E9841B85-7EAF-4FEA-A7A3-50B3474971F7}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Performance/{F7D24146-610D-4182-8537-26CD24F2B173}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Performance/Acceleration 0 to 100 kmh/{DF6F15BD-0ADD-431B-BB2B-4BBB9071F00D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Performance/Fuels Consumption/{7FF28CA6-0F27-4953-B895-E422E20E388B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Car/Performance/Top Speed/{142B6602-6022-4920-87F5-78F6E57671CF}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Cars Folder/__Standard Values/{C7B086DE-04F0-4D90-A88E-CC764D29C343}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Cars Folder/{F6576E41-AC77-4F93-B236-1CE175D23BEA}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Countries Folder/__Standard Values/{465E478C-24DE-49FE-88DF-8E1DB1308648}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Countries Folder/{14107DA1-2BAC-4AE3-A9F3-6256EAD7DF40}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Country/__Standard Values/{7C03F711-F365-4E11-81DD-A9AA79703138}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Country/{ED007229-8493-49A2-9361-B95FCF45F923}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Country/Data/{3380BCB6-5817-44CF-BF9E-DD5399929BB2}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Country/Data/Continent/{7D2B6DE0-CCDD-4E13-9ED8-D428E09A74D4}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Country/Data/Population/{CDC3171F-2607-4BCE-BC5F-8EB4C87E18F3}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Country/Data/Size/{0F309FD1-B309-466C-BDCB-E68085B9C4B6}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Food Folder/__Standard Values/{31F6BBDA-C5F0-4568-AAC0-B7FD6A2EF5AA}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Food Folder/{1F385506-BDA1-46F8-A0F7-F8B99C31FE0B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Food/__Standard Values/{2678DB7A-DE79-4644-96CB-EE4001731D26}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Food/{E69A25A8-D294-4875-B971-99145EBE8E93}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Food/Data/{6D22DF1A-3FE8-4139-A5A3-DCD7397D0FA0}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Food/Data/Calories/{2B8563A0-443C-48FB-B566-57F984BAC789}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Food/Data/Country Origin/{3AD181FD-AE8F-40AE-8E09-F61B7B41FD4E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Hackaton Data/Food/Data/Price/{508C4475-E953-417D-BC17-CBB83B507257}/invariant/0</x-item>
       </Entries>
       <SkipVersions>False</SkipVersions>
       <Converter>
@@ -129,6 +165,127 @@
       <Exclude />
       <Name>Demo Templates</Name>
     </xitems>
+    <items>
+      <Database>master</Database>
+      <Root>{149ECF4C-133D-41FF-B1EA-AAA1B93029CF}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Data 1</Name>
+    </items>
+    <items>
+      <Database>master</Database>
+      <Root>{05C368A9-27D6-471E-9206-A5803F13B22D}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Data 2</Name>
+    </items>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Feature/Feature.Grid.config</x-item>
+        <x-item>/bin/Feature.Grid.dll</x-item>
+        <x-item>/bin/Feature.Grid.pdb</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name />
+    </xfiles>
   </Sources>
   <Converter>
     <TrivialConverter>
