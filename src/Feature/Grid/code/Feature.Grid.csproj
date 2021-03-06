@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.Mvc" />
+    <PackageReference Include="Newtonsoft.Json" />
     <PackageReference Include="Sitecore.Assemblies.Platform">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
@@ -67,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\GridApplicationController.cs" />
+    <Compile Include="Models\GridData.cs" />
     <Compile Include="Pipelines\Initialize\RegisterCustomRoute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="App_Config\Include\Feature\Feature.Grid.config" />

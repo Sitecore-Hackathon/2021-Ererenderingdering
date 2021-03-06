@@ -29,5 +29,6 @@
     <PackageReference Update="Sitecore.AspNet.Tracking" Version="$(SitecoreAspNetVersion)" />
 	<PackageReference Update="Unicorn" Version="4.1.3"/>
     <PackageReference Update="Microsoft.AspNet.Mvc" Version="5.2.4" />
+    <PackageReference Update="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
 </Project>
