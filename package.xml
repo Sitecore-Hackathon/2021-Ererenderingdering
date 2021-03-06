@@ -275,11 +275,28 @@
         <x-item>/App_Config/Include/Feature/Feature.Grid.config</x-item>
         <x-item>/bin/Feature.Grid.dll</x-item>
         <x-item>/bin/Feature.Grid.pdb</x-item>
+        <x-item>/Content/Site.css</x-item>
+        <x-item>/dist/app/gridapp.js</x-item>
+        <x-item>/dist/lib/gridjs.development.min.js</x-item>
+        <x-item>/dist/lib/jquery.min.js</x-item>
+        <x-item>/dist/theme/mermaid.min.css</x-item>
+        <x-item>/dist/theme/style.css</x-item>
+        <x-item>/Views/GridApplication/Index.cshtml</x-item>
+        <x-item>/Views/Shared/_Layout.cshtml</x-item>
       </Entries>
       <Converter>
         <FileToEntryConverter>
           <Root>/</Root>
-          <Transforms />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
         </FileToEntryConverter>
       </Converter>
       <Include />
