@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     new gridjs.Grid({
         columns: ['ID', 'Name'].concat(fields.split(',')).concat(['Actions']),
+        sort: true,
         server: {
             url: '/grid/gridapplication/data?id=' + itemId + '&database=' + database + '&fields=' + fields,
             then: data => data.Data.map(item => [...item, gridjs.html(editButton + deleteButton)])
