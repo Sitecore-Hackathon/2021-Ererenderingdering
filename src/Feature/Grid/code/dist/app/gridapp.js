@@ -68,8 +68,8 @@ function cancelEdit(element) {
 }
 
 function deleteRow(element) {
-    var row = $("button.btn-delete").closest("tr");
-    var id = $("button.btn-delete").closest("tr").children()[0].innerText;
+    var row = $(element).closest("tr");
+    var id = $(element).closest("tr").children()[0].innerText;
 
     postData('/grid/gridapplication/delete?id=' + id + '&database=' + database)
         .then(function (data) { 
