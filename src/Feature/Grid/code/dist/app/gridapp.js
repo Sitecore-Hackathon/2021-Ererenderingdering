@@ -17,19 +17,18 @@ var cancelButton = "<button class='btn-cancel' onClick='cancelEdit(this)'>Cancel
 function saveRow(element) {
     var row = $(element).closest("tr");
     var tableCells = row.find("td:not(:last)");
-    var fieldValues = new Array;
+    var fieldValues = [];
 
     tableCells.each(function () {
         if ($(this).find("input").val()) {
-            fieldValues.push($(this).find("input").val());
+            fieldValues.push($(this).find("input").val().toString());
         }
         else {
-            fieldValues.push($(this).html());
+            fieldValues.push($(this).html().toString());
         }
     })
     var concattedArray = fieldValues.associate(['ID', 'Name'].concat(fields.split(',')));
-
-    postData('/grid/gridapplication/save?id=' + concattedArray.ID + '&database=' + database, concattedArray);
+    postData('/grid/gridapplication/save?id=' + concattedArray.ID + '&database=' + database, { "fields": concattedArray });
 }
 
 function editRow(element) {
