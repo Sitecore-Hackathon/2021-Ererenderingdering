@@ -18,7 +18,27 @@ namespace Feature.Grid.Controllers
         // GET: Application
         public ActionResult Index(string id, string database)
         {
-            return View(); 
+            var model = new Page();
+            using (new DatabaseSwitcher(Sitecore.Data.Database.GetDatabase(database)))
+            {
+                /*var item = Sitecore.Context.Data.Database.GetItem(new ID(id));
+                var templates = item.Children.Select(x => x.Template).Distinct();
+                var fields = new List<string>();
+
+                foreach (var template in templates)
+                {
+                    fields.AddRange(template.OwnFields.Select(x=>x.Name));
+                }
+
+                model.FieldsJson = JsonConvert.SerializeObject(fields);
+                model.TemplatesJson = JsonConvert.SerializeObject(templates);
+                */
+            }
+
+            model.Id = id;
+            model.Database = database;
+
+            return View(model);
         }
 
         public ActionResult Children(string id, string database)
@@ -26,7 +46,7 @@ namespace Feature.Grid.Controllers
             using (new DatabaseSwitcher(Sitecore.Data.Database.GetDatabase(database)))
             {
                 var item = Sitecore.Context.Data.Database.GetItem(new ID(id));
-                var fields = new List<string> {"__Icon" };
+                var fields = new List<string> { "__Icon" };
                 var children = item.Children;
                 var list = new List<Dictionary<string, string>>();
                 foreach (Item child in children)

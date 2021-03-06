@@ -68,7 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\GridApplicationController.cs" />
+    <Compile Include="Models\Facets.cs" />
     <Compile Include="Models\GridData.cs" />
+    <Compile Include="Models\Page.cs" />
     <Compile Include="Pipelines\Initialize\RegisterCustomRoute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="App_Config\Include\Feature\Feature.Grid.config" />
@@ -76,10 +78,18 @@
     <None Include="Properties\PublishProfiles\Docker.pubxml" />
     <None Include="README.md" />
     <Content Include="Content\Site.css" />
-    <Content Include="dist\app\gridapp.js" />
-    <Content Include="dist\lib\gridjs.production.min.js" />
-    <Content Include="dist\lib\jquery.min.js" />
-    <Content Include="dist\theme\mermaid.min.css" />
+    <Content Include="dist\app\gridapp.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dist\lib\gridjs.production.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dist\lib\jquery.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dist\theme\mermaid.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\GridApplication\Index.cshtml" />

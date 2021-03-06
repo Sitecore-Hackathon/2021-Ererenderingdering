@@ -1,7 +1,10 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
+﻿@model Feature.Grid.Models.Page
+<script type="text/javascript">
+    var itemId = "@Model.Id";
+    var templates = "@Model.TemplatesJson";
+    var fields = "@Model.FieldsJson";
+    var database = "@Model.Database";
+</script>
 
-<h2>Index</h2>
 
+<div class="gridapp"></div>
