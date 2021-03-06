@@ -45,10 +45,17 @@ We introduce intgration of Data Grid to Sitecore Content Editor that will allow 
 You can view children items in convenient way:
 ![Visualization](https://user-images.githubusercontent.com/647813/110221990-f0ec0480-7ed7-11eb-969b-a11fba95a34c.gif)
 
-You can easily find childrent items using search and sorting:
+You can easily find children items using search and sorting:
 ![SearchAndSorting](https://user-images.githubusercontent.com/647813/110222091-740d5a80-7ed8-11eb-8cd3-39eb4597da2f.gif)
 
+You can easily delete children items:
+![Delete](https://user-images.githubusercontent.com/647813/110222231-6d331780-7ed9-11eb-8864-ff1e80ce83d1.gif)
+
+You can easily edit children items:
+![Edit](https://user-images.githubusercontent.com/647813/110222246-7fad5100-7ed9-11eb-8d97-62d8905072dd.gif)
 
 
 ## Comments
-If you'd like to make additional comments that is important for your module entry.
+
+Module is far from production ready version. Purpose of creation of module is prove of concept for bulk editor interface in Sitecore.
+Please don't use it in production.
