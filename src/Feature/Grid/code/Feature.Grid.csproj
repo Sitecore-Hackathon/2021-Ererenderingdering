@@ -76,6 +76,7 @@
     <Content Include="App_Config\Include\Feature\Feature.Grid.config" />
     <None Include="Properties\PublishProfiles\Default.pubxml" />
     <None Include="Properties\PublishProfiles\Docker.pubxml" />
+    <None Include="Properties\PublishProfiles\PublishToLocalFolder.pubxml" />
     <None Include="README.md" />
     <Content Include="Content\Site.css" />
     <Content Include="dist\app\gridapp.js">
