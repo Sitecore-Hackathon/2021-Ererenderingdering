@@ -33,6 +33,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{3090
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Website", "src\Project\Website\code\Project.Website.csproj", "{CF9B4204-6580-4638-B954-B14F546E56EE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{DC0093CA-8FB6-4B0F-A341-BF57861A3CEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foundation.Serialization", "src\Foundation\Serialization\code\Foundation.Serialization.csproj", "{35655793-1F1F-40AF-BC5C-68E61B1DF5D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{CF9B4204-6580-4638-B954-B14F546E56EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF9B4204-6580-4638-B954-B14F546E56EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF9B4204-6580-4638-B954-B14F546E56EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35655793-1F1F-40AF-BC5C-68E61B1DF5D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35655793-1F1F-40AF-BC5C-68E61B1DF5D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35655793-1F1F-40AF-BC5C-68E61B1DF5D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35655793-1F1F-40AF-BC5C-68E61B1DF5D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3090E9B6-8E36-4E26-BE06-1C3D2D79CFC3} = {15D97D61-D597-42EC-B7E9-E9EC8130E630}
 		{CF9B4204-6580-4638-B954-B14F546E56EE} = {3090E9B6-8E36-4E26-BE06-1C3D2D79CFC3}
+		{DC0093CA-8FB6-4B0F-A341-BF57861A3CEC} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
+		{35655793-1F1F-40AF-BC5C-68E61B1DF5D2} = {DC0093CA-8FB6-4B0F-A341-BF57861A3CEC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
