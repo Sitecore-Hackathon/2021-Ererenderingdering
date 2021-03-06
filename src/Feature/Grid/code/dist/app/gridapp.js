@@ -13,6 +13,24 @@ var deleteButton = "<button class='btn-delete' onClick='deleteRow(this)'>Delete<
 var saveButton = "<button class='btn-save' onClick='saveRow(this)'>Save</button>";
 var cancelButton = "<button class='btn-cancel' onClick='cancelEdit(this)'>Cancel</button>";
 
+function saveRow(element) {
+    var row = $(element).closest("tr");
+    var tableCells = row.find("td:not(:last)");
+    var fieldValues = [];
+
+    tableCells.each(function () {
+        if ($(this).find("input").val()) {
+            fieldValues.push($(this).find("input").val());
+        }
+        else {
+            fieldValues.push($(this).html());
+        }
+    })
+
+    //key value array: fieldValues.associate(['ID', 'Name'].concat(fields.split(',')))
+    console.log(fieldValues.associate(['ID', 'Name'].concat(fields.split(','))));
+}
+
 function editRow(element) {
     var row = $(element).closest("tr");
     var tableCells = row.find("td:not(:last)");
@@ -23,8 +41,7 @@ function editRow(element) {
         $(this).find('input').val($(this).data('value'));
     });
     $(element).replaceWith(saveButton);
-    $('.btn-delete').replaceWith(cancelButton);
-
+    row.find('.btn-delete').replaceWith(cancelButton);
 }
 
 function cancelEdit(element) {
@@ -36,7 +53,7 @@ function cancelEdit(element) {
         $(this).removeData('value');
     });
     $(element).replaceWith(deleteButton);
-    $('.btn-save').replaceWith(editButton);
+    row.find('.btn-save').replaceWith(editButton);
 }
 
 function deleteRow(element) {
@@ -65,3 +82,11 @@ async function postData(url = '', data = {}) {
     return response; 
 }
 
+Array.prototype.associate = function (arr) {
+    var index,
+        output = Object.create(null);
+    for (index = 0; index < this.length; index++) {
+        output[arr[index]] = this[index];
+    }
+    return output;
+};
