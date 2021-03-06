@@ -114,5 +114,22 @@ namespace Feature.Grid.Controllers
 
             return Content(JsonConvert.SerializeObject(model));
         }
+
+        public ActionResult Delete(string id, string database)
+        {
+            try
+            {
+                using (new DatabaseSwitcher(Sitecore.Data.Database.GetDatabase(database)))
+                {
+                    Sitecore.Context.Database.GetItem(new ID(id)).Delete();
+                }
+            }
+            catch
+            {
+                return Content("fail");
+            }
+
+            return Content("success");
+        }
     }
 }
