@@ -137,5 +137,35 @@ namespace Feature.Grid.Controllers
 
             return Content("{\"result\":\"success\"}");
         }
+
+        [HttpPost]
+        public ActionResult Save(string id, string database, Dictionary<string,string> data)
+        {
+            try
+            {
+                using (new DatabaseSwitcher(Database.GetDatabase(database)))
+                {
+                    //ToDo figure out with security rights
+                    using (new SecurityDisabler())
+                    {
+                        var item = Sitecore.Context.Database.GetItem(new ID(id));
+                        item.Editing.BeginEdit();
+                        foreach (var key in data.Keys)
+                        {
+                            item[key] = data[key];
+                        }
+
+                        item.Editing.EndEdit();
+                        item.Editing.AcceptChanges();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                return Content(e.Message + e.Source);
+            }
+
+            return Content("{\"result\":\"success\"}");
+        }
     }
 }
