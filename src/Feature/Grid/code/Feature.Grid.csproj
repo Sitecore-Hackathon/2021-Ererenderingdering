@@ -76,6 +76,10 @@
     <None Include="Properties\PublishProfiles\Docker.pubxml" />
     <None Include="README.md" />
     <Content Include="Content\Site.css" />
+    <Content Include="dist\app\gridapp.js" />
+    <Content Include="dist\lib\gridjs.production.min.js" />
+    <Content Include="dist\lib\jquery.min.js" />
+    <Content Include="dist\theme\mermaid.min.css" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\GridApplication\Index.cshtml" />
