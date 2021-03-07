@@ -283,6 +283,9 @@
         <x-item>/dist/theme/style.css</x-item>
         <x-item>/Views/GridApplication/Index.cshtml</x-item>
         <x-item>/Views/Shared/_Layout.cshtml</x-item>
+        <x-item>/Views/Shared/_Layout.cshtml</x-item>
+        <x-item>/Views/Web.config</x-item>
+        <x-item>/Views/_ViewStart.cshtml</x-item>
       </Entries>
       <Converter>
         <FileToEntryConverter>
